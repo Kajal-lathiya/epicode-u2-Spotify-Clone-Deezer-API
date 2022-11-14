@@ -1,0 +1,71 @@
+body {
+  margin: 0;
+  background-color: black;
+  width: 100%;
+}
+.nav {
+  display: flex;
+  background-color: black;
+  margin: none;
+  padding-left: 1rem;
+  flex-wrap: wrap;
+  text-align: left;
+}
+.nav-item {
+  width: 100%;
+  color: #f5f5f5;
+  display: none;
+}
+.left {
+  width: 15%;
+}
+.right {
+  width: 85%;
+  height: 90vh;
+  background: rgb(18, 18, 18);
+  background: linear-gradient(
+    0deg,
+    rgba(18, 18, 18, 1) 11%,
+    rgba(35, 23, 32, 1) 45%,
+    rgba(144, 52, 119, 1) 100%
+  );
+}
+.playBar {
+  position: sticky;
+  background-color: #191919;
+  bottom: 0;
+  margin-bottom: 0;
+  height: 8vh;
+  color: #858585;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 5px;
+}
+.swg {
+  padding: 0;
+  margin: 0;
+  height: 1.5em;
+}
+.albumImg {
+  height: 220px;
+}
+.albumDetails {
+  color: #f5f5f5;
+  right: 50%;
+}
+.bandLogo {
+  height: 20px;
+  border-radius: 50%;
+}
+.albumDetails span {
+  padding: 0 0.25em;
+}
+.albumDetails h1 {
+  margin: 0.25 0;
+}
+.albumDetails p {
+  margin: 0;
+}
+.swgDiv {
+  height: 2em;
+}
