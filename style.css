@@ -3,18 +3,39 @@
   /*:root can be useful for declaring global CSS variables*/
   font-size: 16px;
   font-family: "Open Sans";
+
   /*text colors and bg colors will be declared here as global variabels for easier use*/
 }
+
 body {
   color: #a5a5a7;
   background-color: #343a40;
   padding: 0;
   margin: 0;
   font-family: "Roboto", sans-serif;
+  background-image: linear-gradient(
+    to top,
+    #121212,
+    #121212,
+    #121212,
+    #121212,
+    #121212,
+    #161419,
+    #1a151e,
+    #201522,
+    #311327,
+    #430d24,
+    #53051b,
+    #5e0506
+  );
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
 }
 main {
   margin-left: 16rem; /*5em x 16px = 80px*/
   padding: 2rem;
+  color: #dedee0;
 }
 /*         customizing the scrollbar of the page       */
 body::-webkit-scrollbar {
@@ -122,4 +143,37 @@ a {
 }
 .download {
   color: #a5a5a7;
+}
+.chevrons {
+  background-color: rgba(0, 0, 0, 0.459);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  padding: 0.5rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+.fa-chevron-right,
+.fa-chevron-left {
+  color: #a5a5a7;
+}
+.greeting {
+  font-weight: 600;
+}
+.background-card {
+  background-color: rgba(128, 128, 128, 0.301);
+  border-radius: 5px;
+}
+.background-card img {
+  width: 90px;
+}
+.everycard {
+  height: 90px;
+  width: 350px;
+}
+.card-title {
+  font-weight: 600;
+}
+.gridofcards {
+  display: flex;
 }
