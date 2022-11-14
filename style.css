@@ -30,7 +30,7 @@ body {
   );
   background-size: cover;
   height: 100vh;
-  width: 100vw;
+  background-attachment: fixed;
 }
 main {
   margin-left: 16rem; /*5em x 16px = 80px*/
@@ -47,8 +47,11 @@ body::-webkit-scrollbar {
 body::-webkit-scrollbar-thumb {
   background: #555;
 }
-::-webkit-scrollbar-thumb:hover {
-  background: rgb(54, 54, 54);
+div::-webkit-scrollbar-thumb {
+  background: #555;
+}
+div::-webkit-scrollbar {
+  width: 0.5rem;
 }
 /*                        END                          */
 /*                  Navbar customization               */
@@ -165,15 +168,21 @@ a {
   border-radius: 5px;
 }
 .background-card img {
-  width: 90px;
+  width: 80px;
 }
 .everycard {
-  height: 90px;
-  width: 350px;
+  height: 80px;
+  width: 300px;
 }
 .card-title {
   font-weight: 600;
 }
 .gridofcards {
   display: flex;
+}
+#darker {
+  background-color: rgba(48, 48, 48, 0.301);
+}
+#rounded {
+  border-radius: 50%;
 }
