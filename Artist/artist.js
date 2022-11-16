@@ -1,6 +1,10 @@
 fetchArtistAPI = async() => {
     const options = {
-        method: 'GET'
+        method: 'GET',
+        headers: {
+            "X-RapidAPI-Key": "a384224cb5msh269936e2552c740p19046ejsnc63fad635c19",
+            "X-RapidAPI-Host": "deezerdevs-deezer.p.rapidapi.com",
+        },
     }
     const response = await fetch('https://striveschool-api.herokuapp.com/api/deezer/artist/412', options);
     const result = await response.json();
@@ -10,10 +14,16 @@ fetchArtistAPI = async() => {
 }
 fetchtackList = async(url) => {
     const options = {
-        method: 'GET'
+        method: 'GET',
+        headers: {
+            "X-RapidAPI-Key": "a384224cb5msh269936e2552c740p19046ejsnc63fad635c19",
+            "X-RapidAPI-Host": "deezerdevs-deezer.p.rapidapi.com",
+        },
     }
     const response = await fetch(url, options);
     const result = await response.json();
+    console.log('result:', result);
+
     return result;
 }
 renderTracklist = ({ data, next }) => {
