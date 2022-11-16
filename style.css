@@ -167,6 +167,9 @@ a {
   background-color: black;
   transform: scale(1.05);
 }
+.navbar {
+  backdrop-filter: blur(2px);
+}
 .chevrons {
   background-color: rgba(0, 0, 0, 0.459);
   width: 30px;
@@ -182,6 +185,7 @@ a {
 .fa-chevron-right,
 .fa-chevron-left {
   color: #a5a5a7;
+  box-shadow: 3px 5px 5px rgba(65, 65, 65, 0.349);
 }
 .greeting {
   font-weight: 600;
