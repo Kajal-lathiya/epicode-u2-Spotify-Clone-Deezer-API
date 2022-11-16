@@ -1,0 +1,350 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700&display=swap");
+:root {
+    /*:root can be useful for declaring global CSS variables*/
+    font-size: 16px;
+    font-family: "Open Sans";
+    /*text colors and bg colors will be declared here as global variabels for easier use*/
+}
+
+body {
+    color: #a5a5a7;
+    background-color: #343a40;
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    background-image: linear-gradient( to top, #121212, #191919, #1b1b1b, #232323, #252525, #303030, #2c2c2c, #2d2d2d, #2e2e2e, #343434, #4c4c4c, #595959);
+    background-size: cover;
+    height: 100vh;
+    background-attachment: fixed;
+}
+
+main {
+    margin-left: 16rem;
+    /*5em x 16px = 80px*/
+    /* padding: 2rem; */
+    color: #dedee0;
+}
+
+
+/*         customizing the scrollbar of the page       */
+
+body::-webkit-scrollbar {
+    width: 0.5rem;
+}
+
+
+/*body::-webkit-scrollback-track {
+    background: #850909;
+  }*/
+
+
+/* this shit aint working anymore*/
+
+body::-webkit-scrollbar-thumb {
+    background: #555;
+}
+
+div::-webkit-scrollbar-thumb {
+    background: #555;
+}
+
+div::-webkit-scrollbar {
+    width: 0.5rem;
+}
+
+
+/*                        END                          */
+
+
+/*                  Navbar customization               */
+
+.navbar-custom {
+    width: 16rem;
+    /*the same as a margin-left property*/
+    height: 92vh;
+    /*to be responsive*/
+    position: fixed;
+    background-color: #000000;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.navbar-nav {
+    position: relative;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-item {
+    font-weight: 500;
+}
+
+a {
+    /*text-decoration: underline;*/
+    color: #a5a5a7;
+}
+
+ul {
+    /*solves social media button left margin bug (coming from ul property)*/
+    padding: 0;
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.socials .svg {
+    height: 30px;
+}
+
+.fa-brands {
+    margin: 0.5em;
+    color: #ececec;
+    transition: 0.1s;
+}
+
+.button-hover:hover {
+    background-color: #1a1a1a;
+}
+
+.fa-plus {
+    background-color: #555;
+    padding: 0.5rem;
+    border-radius: 1px;
+}
+
+.fa-heart {
+    padding: 0.5rem;
+    background-image: linear-gradient( to right bottom, #4c16f2, #007eff, #00acfc, #00ced5, #bde8d5);
+}
+
+.fa-user-group {
+    color: gray;
+}
+
+.heading {
+    font-size: 25px;
+    margin-left: 0.5rem;
+}
+
+.extra-small-text {
+    font-size: 5px;
+}
+
+.margin {
+    margin: 2rem;
+}
+
+.allplaylists {
+    overflow-x: scroll;
+    height: 46vh;
+    color: #a5a5a7;
+    margin-left: 1rem;
+}
+
+.nav-item-playlists {
+    margin-top: 0.5rem;
+    font-weight: 500;
+}
+
+.heading {
+    font-weight: 600;
+}
+
+.download {
+    color: #a5a5a7;
+}
+
+.chevrons {
+    background-color: rgba(0, 0, 0, 0.459);
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    padding: 0.5rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+.fa-chevron-right,
+.fa-chevron-left {
+    color: #a5a5a7;
+}
+
+.greeting {
+    font-weight: 600;
+}
+
+.background-card {
+    background-color: rgba(128, 128, 128, 0.301);
+    border-radius: 5px;
+}
+
+.background-card img {
+    width: 80px;
+}
+
+.everycard {
+    height: 80px;
+    width: 300px;
+}
+
+.card-title {
+    font-weight: 600;
+}
+
+.gridofcards {
+    display: flex;
+}
+
+#darker {
+    background-color: rgba(48, 48, 48, 0.301);
+}
+
+#rounded {
+    border-radius: 50%;
+}
+
+
+/* /////////////////////////////////// */
+
+.header {
+    height: 5vh;
+    align-items: center;
+    /* background-color: red; */
+}
+
+.profile-info {
+    display: flex;
+    height: 5vh;
+    align-items: center !important;
+    border-radius: 20px;
+    background-color: #110505;
+}
+
+.profilePic {
+    object-fit: cover;
+    height: 4vh;
+    width: 4vh;
+    border-radius: 50%;
+    margin-inline: 10px;
+}
+
+.bg-image {
+    /* background-image: url("../Assets/bgImage.jpg"); */
+    background-size: cover;
+    height: 50vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.userName {
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    max-width: 100px;
+    padding-top: 12px;
+    font-size: 14px;
+    text-overflow: ellipsis;
+}
+
+.downArrow {
+    height: 20px;
+    width: 20px;
+    align-self: center;
+    margin-right: 5px;
+}
+
+.verifiedLogo {
+    height: 18px;
+    width: 18px;
+}
+
+.font40 {
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+.pauseIcon {
+    height: 25px;
+    width: 25px;
+    margin-top: 2vh;
+}
+
+.playMain {
+    display: flex;
+    align-items: center;
+    height: 7vh;
+}
+
+.playbutton {
+    height: 7vh;
+    width: 7vh;
+    border-radius: 50%;
+    text-align: center;
+    background-color: #1eba54;
+}
+
+.followDiv {
+    border: 1px solid #6b6b6b;
+    border-radius: 5px;
+    padding-block: 7px;
+    padding-inline: 15px;
+    margin-inline: 15px;
+    text-align: center;
+}
+
+.dots {
+    width: 30px;
+    height: 10px;
+}
+
+.artistImage {
+    height: 35px;
+    width: 35px;
+    object-fit: cover;
+    margin-inline: 5px;
+}
+
+.image60 {
+    height: 60px;
+    width: 60px;
+    object-fit: cover;
+    margin-inline: 5px;
+}
+
+.image20 {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.fontsize12 {
+    font-size: 12px;
+}
+
+.artistPic {
+    padding-bottom: 7px;
+}
+
+h6 {
+    margin-bottom: 0 !important;
+}
+
+.trackTitle {
+    min-width: 400px;
+}
+
+#see-more {
+    font-size: 12px;
+    font-weight: bolder;
+    margin-bottom: 100px;
+}
