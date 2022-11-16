@@ -234,7 +234,7 @@ a {
 }
 
 .bg-image {
-    background-image: url("../Assets/bgImage.jpg");
+    /* background-image: url("../Assets/bgImage.jpg"); */
     background-size: cover;
     height: 50vh;
     width: 100%;
@@ -272,6 +272,12 @@ a {
     font-weight: bolder;
 }
 
+.pauseIcon {
+    height: 25px;
+    width: 25px;
+    margin-top: 2vh;
+}
+
 .playMain {
     display: flex;
     align-items: center;
@@ -281,15 +287,15 @@ a {
 .playbutton {
     height: 7vh;
     width: 7vh;
-    text-align: center;
     border-radius: 50%;
+    text-align: center;
     background-color: #1eba54;
 }
 
 .followDiv {
     border: 1px solid #6b6b6b;
-    border-radius: 10px;
-    padding-block: 5px;
+    border-radius: 5px;
+    padding-block: 7px;
     padding-inline: 15px;
     margin-inline: 15px;
     text-align: center;
@@ -297,4 +303,48 @@ a {
 
 .dots {
     width: 30px;
+    height: 10px;
+}
+
+.artistImage {
+    height: 35px;
+    width: 35px;
+    object-fit: cover;
+    margin-inline: 5px;
+}
+
+.image60 {
+    height: 60px;
+    width: 60px;
+    object-fit: cover;
+    margin-inline: 5px;
+}
+
+.image20 {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.fontsize12 {
+    font-size: 12px;
+}
+
+.artistPic {
+    padding-bottom: 7px;
+}
+
+h6 {
+    margin-bottom: 0 !important;
+}
+
+.trackTitle {
+    min-width: 400px;
+}
+
+#see-more {
+    font-size: 12px;
+    font-weight: bolder;
+    margin-bottom: 100px;
 }
