@@ -5,7 +5,6 @@ fetchArtistAPI = async() => {
     const response = await fetch('https://striveschool-api.herokuapp.com/api/deezer/artist/412', options);
     const result = await response.json();
     const trackList = await fetchtackList(result.tracklist);
-    console.log('trackList:', trackList);
     renderTracklist(trackList)
     return result;
 }
@@ -23,7 +22,7 @@ renderTracklist = ({ data, next }) => {
     data.map(({ title, rank, duration, md5_image }, index) => trackList.innerHTML += `<div class="d-flex justify-content-between mt-2">
         <div class="trackTitle">
         <span>${index + 1}</span>
-        <img src="https://glastonbury.davidbowie.com/images/album_cover.png" class="artistImage" />
+        <img src="../Assets/bgImage.jpg" class="artistImage" />
         <span>${title}</span>
         </div>
         <p>${rank}</p>
@@ -58,7 +57,7 @@ renderartist = ({ name, picture_medium, nb_fan, radio, type }) => {
         ><i class="fa-solid fa-chevron-right chevrons"></i
       ></span>
         <div class="profile-info">
-            <img src="https://glastonbury.davidbowie.com/images/album_cover.png" class="profilePic" />
+            <img src="../Assets/logo.png" class="profilePic" />
             <p class="userName">Diego 'Ziba bafggfd'</p>
             <i class="fa-solid fa-caret-down downArrow"></i>
         </div>
