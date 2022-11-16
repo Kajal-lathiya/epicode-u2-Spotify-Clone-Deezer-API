@@ -362,8 +362,8 @@ body {
   height: 1.5em;
 }
 .albumImg {
-  height: 250px;
-  width: auto;
+  height: 15vh;
+  width: 15vw;
 }
 .albumDetails {
   color: #f5f5f5;
@@ -400,7 +400,6 @@ hr {
   height: 60px;
 }
 .playbar {
-  position: sticky;
 }
 .playbar p {
   font-size: 0.75em;
