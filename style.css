@@ -10,8 +10,6 @@
 body {
   color: #a5a5a7;
   background-color: #343a40;
-  padding: 0;
-  margin: 0;
   font-family: "Roboto", sans-serif;
   background-image: linear-gradient(
     to top,
@@ -30,10 +28,12 @@ body {
   );
   background-size: cover;
   height: 100vh;
+  overflow: auto;
+  overflow-x: hidden;
   background-attachment: fixed;
 }
 main {
-  margin-left: 16rem; /*5em x 16px = 80px*/
+  margin-left: 0rem; /*5em x 16px = 80px*/
   padding: 2rem;
   color: #dedee0;
 }
@@ -56,12 +56,13 @@ div::-webkit-scrollbar {
 /*                        END                          */
 /*                  Navbar customization               */
 .navbar-custom {
-  width: 16rem; /*the same as a margin-left property*/
+  width: 0rem; /*the same as a margin-left property*/
   height: 92vh; /*to be responsive*/
   position: fixed;
   background-color: #000000;
   background-repeat: no-repeat;
   background-size: cover;
+  z-index: 1;
 }
 .navbar-nav {
   position: relative;
@@ -90,14 +91,6 @@ a {
   text-decoration: none;
 }
 
-.socials .svg {
-  height: 30px;
-}
-.fa-brands {
-  margin: 0.5em;
-  color: #ececec;
-  transition: 0.1s;
-}
 .button-hover:hover {
   background-color: #1a1a1a;
 }
@@ -132,7 +125,8 @@ a {
   margin-top: 2rem;
 }
 .allplaylists {
-  overflow-x: scroll;
+  overflow: auto;
+  overflow-x: hidden;
   height: 46vh;
   color: #a5a5a7;
   margin-left: 1rem;
@@ -164,25 +158,145 @@ a {
   font-weight: 600;
 }
 .background-card {
-  background-color: rgba(128, 128, 128, 0.301);
+  background-color: rgba(100, 100, 100, 0.301);
   border-radius: 5px;
+  transition: 0.4s;
 }
-.background-card img {
-  width: 80px;
-}
-.everycard {
-  height: 80px;
-  width: 300px;
-}
+
 .card-title {
   font-weight: 600;
 }
-.gridofcards {
-  display: flex;
-}
 #darker {
   background-color: rgba(48, 48, 48, 0.301);
+  transition: 0.4s;
 }
 #rounded {
   border-radius: 50%;
+}
+/*BUILDING MOBILE RESPONSIVE VIEW*/
+/* For Mobile Portrait View */
+/* For Desktop View */
+@media screen and (min-width: 900px) {
+  .nav-item {
+    display: none;
+  }
+  .download {
+    display: none;
+  }
+}
+@media screen and (min-width: 1124px) {
+  main {
+    margin-left: 13rem; /*5em x 16px = 80px*/
+    padding: 2rem;
+    color: #dedee0;
+  }
+  /*                  Navbar customization               */
+  .navbar-custom {
+    width: 13rem; /*the same as a margin-left property*/
+    height: 92vh; /*to be responsive*/
+    position: fixed;
+    background-color: #000000;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .navbar-nav {
+    position: relative;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .nav-item,
+  .download {
+    display: inline-block;
+  }
+
+  .allplaylists {
+    height: 40vh;
+    margin-left: 0rem;
+  }
+  .navbar-custom {
+    height: 100vh;
+  }
+  #top-buttons .card-title {
+    width: 55px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .card-text {
+    width: 50px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+@media screeen and (min-width: 1200px) {
+}
+@media screen and (min-width: 1500px) {
+  main {
+    margin-left: 16rem; /*5em x 16px = 80px*/
+    padding: 2rem;
+    color: #dedee0;
+  }
+  /*                  Navbar customization               */
+  .navbar-custom {
+    width: 16rem; /*the same as a margin-left property*/
+    height: 92vh; /*to be responsive*/
+    position: fixed;
+    background-color: #000000;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .navbar-nav {
+    position: relative;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nav-item {
+    font-weight: 500;
+  }
+  #top-buttons .card-title {
+    width: 125px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .card-text {
+    width: 100px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+.aspect-ratio-one-to-one {
+  aspect-ratio: 1 / 1;
+}
+.fa-circle-play {
+  color: rgba(27, 165, 34, 0.671);
+  visibility: hidden !important;
+  transition: 0.4s;
+  transition: transform 0.2s;
+}
+
+#top-buttons:hover .fa-circle-play {
+  visibility: visible !important;
+  transition: 0.4s;
+  transform: scale(1.2);
+  color: rgba(34, 241, 44, 0.979);
+}
+.background-card:hover {
+  background-color: rgba(165, 165, 165, 0.301);
+  transition: 0.4s;
+}
+#darker:hover {
+  background-color: rgba(107, 107, 107, 0.301);
+  transition: 0.4s;
 }
