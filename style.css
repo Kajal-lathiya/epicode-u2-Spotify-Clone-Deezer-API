@@ -141,6 +141,32 @@ a {
 .download {
   color: #a5a5a7;
 }
+#right {
+  position: absolute;
+  right: 2.5rem;
+  padding: 0.5rem;
+  height: 45px;
+  border-radius: 20px;
+  background-color: #161419;
+  transition: 0.3s;
+  cursor: pointer;
+}
+#right:hover {
+  background-color: #323035;
+  transition: 0.3s;
+}
+#righttwo {
+  position: absolute;
+  right: 12rem;
+}
+.btn-outline-white {
+  border-color: rgb(112, 112, 112) !important;
+  color: white;
+}
+.btn-outline-white:hover {
+  background-color: black;
+  transform: scale(1.05);
+}
 .chevrons {
   background-color: rgba(0, 0, 0, 0.459);
   width: 30px;
@@ -149,6 +175,9 @@ a {
   padding: 0.5rem;
   margin-left: 0.5rem;
   margin-right: 0.5rem;
+}
+.chevrons:hover {
+  cursor: pointer;
 }
 .fa-chevron-right,
 .fa-chevron-left {
