@@ -131,6 +131,9 @@ a {
   color: #a5a5a7;
   margin-left: 1rem;
 }
+.allplaylists li {
+  margin-left: 1rem;
+}
 .nav-item-playlists {
   margin-top: 0.5rem;
   font-weight: 500;
@@ -265,6 +268,12 @@ a {
     overflow: hidden;
     text-overflow: ellipsis;
   }
+}
+#midsidecards .card-title {
+  width: 120px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 @media screeen and (min-width: 1200px) {
 }
