@@ -1,65 +1,279 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700&display=swap");
 :root {
-    /*:root can be useful for declaring global CSS variables*/
-    font-size: 16px;
-    font-family: "Open Sans";
-    /*text colors and bg colors will be declared here as global variabels for easier use*/
-}
+
+  font-size: 16px;
+  font-family: "Open Sans";
+
+} */
 
 body {
-    color: #a5a5a7;
-    background-color: #343a40;
-    font-family: "Roboto", sans-serif;
-    background-image: linear-gradient( to top, #121212, #121212, #121212, #121212, #121212, #161419, #1a151e, #201522, #311327, #430d24, #53051b, #5e0506);
-    background-size: cover;
-    height: 100vh;
-    overflow: auto;
-    overflow-x: hidden;
-    background-attachment: fixed;
+  color: #a5a5a7;
+  background-color: #343a40;
+  font-family: "Roboto", sans-serif;
+  background-image: linear-gradient(
+    to top,
+    #121212,
+    #121212,
+    #121212,
+    #121212,
+    #121212,
+    #161419,
+    #1a151e,
+    #201522,
+    #311327,
+    #430d24,
+    #53051b,
+    #5e0506
+  );
+  background-size: cover;
+  height: 100vh;
+  overflow: auto;
+  overflow-x: hidden;
+  background-attachment: fixed;
 }
 
 main {
-    margin-left: 0rem;
-    /*5em x 16px = 80px*/
-    padding: 2rem;
-    color: #dedee0;
+  margin-top: -1rem;
+  margin-left: 0rem;
+  /*5em x 16px = 80px*/
+  padding: 2rem;
+  color: #dedee0;
 }
-
 
 /*         customizing the scrollbar of the page       */
 
 body::-webkit-scrollbar {
-    width: 0.5rem;
+  width: 0.5rem;
 }
-
 
 /*body::-webkit-scrollback-track {
     background: #850909;
   }*/
 
-
 /* this shit aint working anymore*/
 
 body::-webkit-scrollbar-thumb {
-    background: #555;
+  background: #555;
 }
 
 div::-webkit-scrollbar-thumb {
-    background: #555;
+  background: #555;
 }
 
 div::-webkit-scrollbar {
-    width: 0.5rem;
+  width: 0.5rem;
 }
 
-
 /*                        END                          */
-
 
 /*                  Navbar customization               */
 
 .navbar-custom {
-    width: 0rem;
+  width: 0rem;
+  /*the same as a margin-left property*/
+  height: 92vh;
+  /*to be responsive*/
+  position: fixed;
+  background-color: #000000;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 1;
+}
+
+.navbar-nav {
+  position: relative;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-item {
+  font-weight: 500;
+}
+
+.gotohome {
+  color: #dedee0;
+  text-decoration: none;
+}
+.gotohome:hover {
+  color: #f5f5f5;
+}
+
+ul {
+  /*solves social media button left margin bug (coming from ul property)*/
+  padding: 0;
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.button-hover:hover {
+  background-color: #1a1a1a;
+}
+
+.fa-plus {
+  background-color: #555;
+  padding: 0.5rem;
+  border-radius: 1px;
+}
+
+.fa-heart {
+  padding: 0.5rem;
+  background-image: linear-gradient(
+    to right bottom,
+    #4c16f2,
+    #007eff,
+    #00acfc,
+    #00ced5,
+    #bde8d5
+  );
+}
+
+.fa-user-group {
+  color: gray;
+}
+
+.heading {
+  font-size: 25px;
+  margin-left: 0.5rem;
+}
+
+.extra-small-text {
+  font-size: 5px;
+}
+
+.margin-top {
+  margin-top: 2rem;
+}
+
+.allplaylists {
+  overflow: auto;
+  overflow-x: hidden;
+  height: 46vh;
+  color: #a5a5a7;
+  margin-left: 1rem;
+}
+
+.nav-item-playlists {
+  margin-top: 0.5rem;
+  font-weight: 500;
+}
+
+.heading {
+  font-weight: 600;
+}
+
+.download {
+  color: #a5a5a7;
+}
+
+#right {
+  position: absolute;
+  right: 2.5rem;
+  padding: 0.5rem;
+  height: 45px;
+  border-radius: 20px;
+  background-color: #161419;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+#right:hover {
+  background-color: #323035;
+  transition: 0.3s;
+}
+
+#righttwo {
+  position: absolute;
+  right: 12rem;
+}
+
+.btn-outline-white {
+  border-color: rgb(112, 112, 112) !important;
+  color: white;
+}
+
+.btn-outline-white:hover {
+  background-color: black;
+  transform: scale(1.05);
+}
+
+.navbar {
+  backdrop-filter: blur(2px);
+}
+
+.chevrons {
+  background-color: rgba(0, 0, 0, 0.459);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  padding: 0.5rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.chevrons:hover {
+  cursor: pointer;
+}
+
+.fa-chevron-right,
+.fa-chevron-left {
+  color: #a5a5a7;
+  box-shadow: 3px 5px 5px rgba(65, 65, 65, 0.349);
+}
+
+.greeting {
+  font-weight: 600;
+}
+
+.background-card {
+  background-color: rgba(100, 100, 100, 0.301);
+  border-radius: 5px;
+  transition: 0.4s;
+}
+
+.card-title {
+  font-weight: 600;
+}
+
+#darker {
+  background-color: rgba(48, 48, 48, 0.301);
+  transition: 0.4s;
+}
+
+#rounded {
+  border-radius: 50%;
+}
+
+/*BUILDING MOBILE RESPONSIVE VIEW*/
+
+/* For Mobile Portrait View */
+
+/* For Desktop View */
+
+@media screen and (min-width: 900px) {
+  .nav-item {
+    display: none;
+  }
+  .download {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1124px) {
+  main {
+    margin-left: 13rem;
+    /*5em x 16px = 80px*/
+    padding: 2rem;
+    color: #dedee0;
+  }
+  /*                  Navbar customization               */
+  .navbar-custom {
+    width: 13rem;
     /*the same as a margin-left property*/
     height: 92vh;
     /*to be responsive*/
@@ -67,428 +281,233 @@ div::-webkit-scrollbar {
     background-color: #000000;
     background-repeat: no-repeat;
     background-size: cover;
-    z-index: 1;
-}
-
-.navbar-nav {
+  }
+  .navbar-nav {
     position: relative;
     list-style: none;
     padding: 0;
     margin: 0;
     display: flex;
     flex-direction: column;
+  }
+  .nav-item,
+  .download {
+    display: inline-block;
+  }
+  .allplaylists {
+    height: 40vh;
+    margin-left: 0rem;
+  }
+  .navbar-custom {
+    height: 100vh;
+  }
+  #top-buttons .card-title {
+    width: 55px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .card-text {
+    width: 50px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
 }
 
-.nav-item {
-    font-weight: 500;
+@media screeen and (min-width: 1200px) {
 }
-
-a {
-    /*text-decoration: underline;*/
-    color: #a5a5a7;
-}
-
-ul {
-    /*solves social media button left margin bug (coming from ul property)*/
-    padding: 0;
-    list-style-type: none;
-}
-
-a {
-    text-decoration: none;
-}
-
-.button-hover:hover {
-    background-color: #1a1a1a;
-}
-
-.fa-plus {
-    background-color: #555;
-    padding: 0.5rem;
-    border-radius: 1px;
-}
-
-.fa-heart {
-    padding: 0.5rem;
-    background-image: linear-gradient( to right bottom, #4c16f2, #007eff, #00acfc, #00ced5, #bde8d5);
-}
-
-.fa-user-group {
-    color: gray;
-}
-
-.heading {
-    font-size: 25px;
-    margin-left: 0.5rem;
-}
-
-.extra-small-text {
-    font-size: 5px;
-}
-
-.margin-top {
-    margin-top: 2rem;
-}
-
-.allplaylists {
-    overflow: auto;
-    overflow-x: hidden;
-    height: 46vh;
-    color: #a5a5a7;
-    margin-left: 1rem;
-}
-
-.nav-item-playlists {
-    margin-top: 0.5rem;
-    font-weight: 500;
-}
-
-.heading {
-    font-weight: 600;
-}
-
-.download {
-    color: #a5a5a7;
-}
-
-#right {
-    position: absolute;
-    right: 2.5rem;
-    padding: 0.5rem;
-    height: 45px;
-    border-radius: 20px;
-    background-color: #161419;
-    transition: 0.3s;
-    cursor: pointer;
-}
-
-#right:hover {
-    background-color: #323035;
-    transition: 0.3s;
-}
-
-#righttwo {
-    position: absolute;
-    right: 12rem;
-}
-
-.btn-outline-white {
-    border-color: rgb(112, 112, 112) !important;
-    color: white;
-}
-
-.btn-outline-white:hover {
-    background-color: black;
-    transform: scale(1.05);
-}
-
-.navbar {
-    backdrop-filter: blur(2px);
-}
-
-.chevrons {
-    background-color: rgba(0, 0, 0, 0.459);
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    padding: 0.5rem;
-    margin-left: 0.5rem;
-    margin-right: 0.5rem;
-}
-
-.chevrons:hover {
-    cursor: pointer;
-}
-
-.fa-chevron-right,
-.fa-chevron-left {
-    color: #a5a5a7;
-    box-shadow: 3px 5px 5px rgba(65, 65, 65, 0.349);
-}
-
-.greeting {
-    font-weight: 600;
-}
-
-.background-card {
-    background-color: rgba(100, 100, 100, 0.301);
-    border-radius: 5px;
-    transition: 0.4s;
-}
-
-.card-title {
-    font-weight: 600;
-}
-
-#darker {
-    background-color: rgba(48, 48, 48, 0.301);
-    transition: 0.4s;
-}
-
-#rounded {
-    border-radius: 50%;
-}
-
-
-/*BUILDING MOBILE RESPONSIVE VIEW*/
-
-
-/* For Mobile Portrait View */
-
-
-/* For Desktop View */
-
-@media screen and (min-width: 900px) {
-    .nav-item {
-        display: none;
-    }
-    .download {
-        display: none;
-    }
-}
-
-@media screen and (min-width: 1124px) {
-    main {
-        margin-left: 13rem;
-        /*5em x 16px = 80px*/
-        padding: 2rem;
-        color: #dedee0;
-    }
-    /*                  Navbar customization               */
-    .navbar-custom {
-        width: 13rem;
-        /*the same as a margin-left property*/
-        height: 92vh;
-        /*to be responsive*/
-        position: fixed;
-        background-color: #000000;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    .navbar-nav {
-        position: relative;
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        display: flex;
-        flex-direction: column;
-    }
-    .nav-item,
-    .download {
-        display: inline-block;
-    }
-    .allplaylists {
-        height: 40vh;
-        margin-left: 0rem;
-    }
-    .navbar-custom {
-        height: 100vh;
-    }
-    #top-buttons .card-title {
-        width: 55px;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-    }
-    .card-text {
-        width: 50px;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-    }
-}
-
-@media screeen and (min-width: 1200px) {}
 
 @media screen and (min-width: 1500px) {
-    main {
-        margin-left: 16rem;
-        /*5em x 16px = 80px*/
-        padding: 2rem;
-        color: #dedee0;
-    }
-    /*                  Navbar customization               */
-    .navbar-custom {
-        width: 16rem;
-        /*the same as a margin-left property*/
-        height: 92vh;
-        /*to be responsive*/
-        position: fixed;
-        background-color: #000000;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    .navbar-nav {
-        position: relative;
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        display: flex;
-        flex-direction: column;
-    }
-    .nav-item {
-        font-weight: 500;
-    }
-    #top-buttons .card-title {
-        width: 125px;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-    }
-    .card-text {
-        width: 100px;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-    }
+  main {
+    margin-left: 16rem;
+    /*5em x 16px = 80px*/
+    padding: 2rem;
+    color: #dedee0;
+  }
+  /*                  Navbar customization               */
+  .navbar-custom {
+    width: 16rem;
+    /*the same as a margin-left property*/
+    height: 92vh;
+    /*to be responsive*/
+    position: fixed;
+    background-color: #000000;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .navbar-nav {
+    position: relative;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .nav-item {
+    font-weight: 500;
+  }
+  #top-buttons .card-title {
+    width: 125px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .card-text {
+    width: 100px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
 }
 
 .aspect-ratio-one-to-one {
-    aspect-ratio: 1 / 1;
+  aspect-ratio: 1 / 1;
 }
 
 .fa-circle-play {
-    color: rgba(27, 165, 34, 0.671);
-    visibility: hidden !important;
-    transition: 0.4s;
-    transition: transform 0.2s;
+  color: rgba(27, 165, 34, 0.671);
+  visibility: hidden !important;
+  transition: 0.4s;
+  transition: transform 0.2s;
 }
 
 #top-buttons:hover .fa-circle-play {
-    visibility: visible !important;
-    transition: 0.4s;
-    transform: scale(1.2);
-    color: rgba(34, 241, 44, 0.979);
+  visibility: visible !important;
+  transition: 0.4s;
+  transform: scale(1.2);
+  color: rgba(34, 241, 44, 0.979);
 }
 
 .background-card:hover {
-    background-color: rgba(165, 165, 165, 0.301);
-    transition: 0.4s;
+  background-color: rgba(165, 165, 165, 0.301);
+  transition: 0.4s;
 }
 
 #darker:hover {
-    background-color: rgba(107, 107, 107, 0.301);
-    transition: 0.4s;
+  background-color: rgba(107, 107, 107, 0.301);
+  transition: 0.4s;
 }
 
-
 /*                  Navbar customization               */
-
 
 /*end pf navbar from timmy*/
 
 .left {
-    width: 13%;
+  width: 13%;
 }
 
 .right {
-    width: 85%;
-    height: 88vh;
+  width: 85%;
+  height: 150vh;
+  /* gotta check the height later to wrap around the song list properly */
 }
 
 .playBar {
-    position: sticky;
-    background-color: #191919;
-    height: 10vh;
-    display: flex;
-    align-items: center;
-    text-align: start;
-    color: #f5f5f5;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    border-top: 0.5px solid lightgrey 0.5;
+  position: sticky;
+  background-color: #191919;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  text-align: start;
+  color: #f5f5f5;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-top: 0.5px solid lightgrey 0.5;
 }
 
 .swg {
-    padding: 0;
-    margin: 0;
-    height: 1.5em;
+  padding: 0;
+  margin: 0;
+  height: 1.5em;
 }
 
 .albumImg {
-    height: 15vh;
-    width: 15vw;
+  height: 20vh;
+  width: 20vw;
 }
 
 .albumDetails {
-    color: #f5f5f5;
+  color: #f5f5f5;
 }
 
 .bandLogo {
-    height: 20px;
-    border-radius: 50%;
+  height: 20px;
+  border-radius: 50%;
 }
 
 .albumDetails span {
-    padding: 0 0.25em;
+  padding: 0 0.25em;
 }
 
 .albumDetails h1 {
-    margin: 0.25 0em;
+  margin: 0.25 0em;
 }
 
 .albumDetails p {
-    margin: 0;
+  margin: 0;
 }
 
 .swgDiv {
-    height: 2em;
-    padding-left: 1.5em;
+  height: 2em;
+  padding-left: 1.5em;
 }
 
 hr {
-    color: white;
-    margin: 0 2em;
-    padding: 0 2em;
+  color: white;
+  margin: 0 2em;
+  padding: 0 2em;
 }
 
 .playBar h6 {
-    margin: 0;
-    padding-top: 15px;
+  margin: 0;
+  padding-top: 15px;
 }
 
 .lilAlb {
-    width: 60px;
-    height: 60px;
+  width: 60px;
+  height: 60px;
 }
 
 .playbar p {
-    font-size: 0.75em;
-    color: lightgrey;
-    margin: none;
+  font-size: 0.75em;
+  color: lightgrey;
+  margin: none;
 }
-
-.playbar h6:hover,
 p:hover {
-    text-decoration: underline;
-    cursor: pointer;
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 .playbarline {
-    width: 450px;
-    margin: 0 0.5em;
-    border: solid 0.12em lightgrey;
-    border-radius: 10%;
+  width: 500px;
+  margin: 0 0.5em;
+  border: solid 0.12em lightgrey;
+  border-radius: 10%;
 }
 
 .volumebarline {
-    width: 100px;
-    margin: 0 0.5em;
-    border: solid 0.12em lightgrey;
-    border-radius: 10%;
+  width: 100px;
+  margin: 0 0.5em;
+  border: solid 0.12em lightgrey;
+  border-radius: 10%;
 }
 
-.Albumtable {
-    color: #f5f5f5;
-    margin-left: 2em;
-    margin-right: 2em;
+.artistName {
+  color: lightgrey;
+  font-size: 0.75em;
 }
-
-tr {
-    height: 2.5rem;
-    border: none;
+.artistName:hover {
+  text-decoration: underline;
+  cursor: pointer;
+  color: #f5f5f5;
 }
-
-tr:hover {
-    background-color: rgb(18, 18, 18, 0.4);
+.songlistDiv:hover {
+  background-color: rgba(59, 58, 58, 0.6);
+  border-radius: 5px;
+}
+/* added these to the playbar */
+.playbar span {
+  color: lightgrey;
+  font-size: 0.75em;
 }

@@ -467,3 +467,8 @@ tr {
 tr:hover {
     background-color: rgb(18, 18, 18, 0.4);
 }
+
+a {
+    text-decoration: none;
+    /* no underline */
+}

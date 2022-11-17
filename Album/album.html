@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Album Page</title>
     <link rel="stylesheet" href="styles.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
@@ -16,62 +16,62 @@
   <body>
     <div class="navbar-custom d-none d-lg-block d-xl-block d-xxl-block">
       <ul class="navbar-nav">
-        <li class="nav-item mt-2">
-          <span
-            class="text-light heading d-flex align-items-center justify-content-center"
+        <li class="nav-item my-3"> 
+          <div
+            class="text-light heading d-flex align-items-center justify-content-flex-start mt-3"
           >
-            <i class="fa-brands fa-spotify m-2"></i> Spotify
-          </span>
+            <i class="fa-brands fa-spotify mx-3 p-1"></i> Spotify
+        </div>
         </li>
-        <li class="nav-item">
+        <li class="nav-item ">
           <button
             type="button"
-            class="btn w-100 p-3 text-light button-hover text-left mh-10 align-items-center"
+            class="btn w-100 h-50 py-md-2 text-light button-hover text-left d-flex align-items-center justify-content-around"
             style="height: 60px"
           >
-            <span><i class="fa-solid fa-house mr-2 ml-2"></i> Home</span>
+            <i class="fa-solid fa-house mx-3"></i><div class="w-75 d-flex" ><a class="gotohome" href="/index.html">Home</a></div>
           </button>
         </li>
         <li class="nav-item">
           <button
             type="button"
-            class="btn w-100 p-3 text-light button-hover text-left"
+            class="btn w-100 h-50 py-md-2 text-light button-hover text-left d-flex align-items-center justify-content-around"
             style="height: 60px"
           >
-            <span
-              ><i class="fa-solid fa-magnifying-glass mr-2 ml-2"></i>
-              Search</span
+           <i class="fa-solid fa-magnifying-glass mx-3"></i>
+           <div class="w-75 d-flex" >Search</div
             >
           </button>
         </li>
         <li class="nav-item">
           <button
             type="button"
-            class="btn w-100 p-3 text-light button-hover text-left"
+            class="btn w-100 h-50 py-md-2 text-light button-hover text-left d-flex align-items-center justify-content-around"
             style="height: 60px"
           >
-            <span
-              ><i class="fa-regular fa-bookmark mr-2 ml-2"></i> Your
-              Library</span
-            >
+            <i class="fa-regular fa-bookmark mx-3"></i> 
+            <div class="w-75 d-flex" >Your
+              Library</div>
           </button>
         </li>
         <li class="nav-item margin-top">
           <button
             type="button"
-            class="btn w-100 p-3 text-light button-hover text-left"
+            class="btn w-100 h-50 py-md-2 text-light button-hover text-left d-flex align-items-center justify-content-around"
             style="height: 60px"
           >
-            <span><i class="fa-solid fa-plus mr-2"></i> Create Playlist</span>
+            <i class="fa-solid fa-plus mx-2"></i> 
+            <div class="w-75 d-flex" >Create Playlist</div>
           </button>
         </li>
         <li class="nav-item">
           <button
             type="button"
-            class="btn w-100 p-3 text-light button-hover text-left"
+            class="btn w-100 h-50 py-md-2 text-light button-hover text-left d-flex align-items-center justify-content-around"
             style="height: 60px"
           >
-            <span><i class="fa-solid fa-heart mr-2"></i> Liked Songs</span>
+            <i class="fa-solid fa-heart mx-2"></i> 
+            <div class="w-75 d-flex" >Liked Songs</div>
           </button>
         </li>
       </ul>
@@ -171,9 +171,9 @@
                 <div class="row">
                  
                        
-                    <div class="d-flex justify-content-left">   
-                    <div class="albumcontainer px-3 py-2">
-                        <img class="albumImg img-fluid" src="https://glastonbury.davidbowie.com/images/album_cover.png"/> 
+                    <div id="albumcontainer" class="d-flex justify-content-left">   
+                    <!-- <div class="albumcontainer px-3 py-2"> -->
+                        <!-- <img class="albumImg img-fluid" src="https://glastonbury.davidbowie.com/images/album_cover.png"/> 
                         </div>
                         <div class="albumDetails align-self-end pb-3">
                             <p>Album</p>
@@ -185,48 +185,43 @@
                            <span>Year</span>
                            <span>Song count,</span>
                            <span>Duration</span>
-                         </div>                         
-                     </div>
+                         </div>                          -->
+                     <!-- </div> -->
                     
                 
                 </div>  
-             
-                <div class="songList">
-                 
-                  
-                  <table class="Albumtable table-hover">
-                    <tbody>
-                      <tr>
-                        <th scope="row">#</th>
-                        <td>Title</td>
-                        
-                        <td><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16">
-                          <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
-                          <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"/>
-                        </svg></td>
-                      </tr>
-                    </tbody>
-                  </table>
-                      <hr>
-                      <table scope="row" class="Albumtable table-hover row">
-                        <tbody>
-                      <tr>
-                        <th scope="row">1</th>
-                        <td>Jacob</td>
-                        
-                        <td>@fat</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">2</th>
-                        <td>Larry</td>
-                        
-                        <td>@twitter</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                  </div>  
-          </div>
-       
+               
+                <div class="d-flex row songList mx-2 p-0 my-0">
+                       <div class="d-flex justify-content-between">
+                         <div>
+                        <span class="px-2">#</span>
+                        <span>Title</span>
+                        </div>
+                      <div>
+                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16">
+                            <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
+                            <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"/>
+                          </svg>
+                        </div>
+                        </div>
+                     
+                        <div class="mb-4"><hr></div> 
+                     
+                      <!-- <div class="d-flex justify-content-between bg-dark align-items-center">
+                        <div class="d-flex justify-content-between align-items-center">
+                          <div class="p-2">
+                            1
+                             </div>
+                       <div class="align-content-center"> 
+                        <div class="fw-bold m-0 pt-2 px-2 ">SOMEBODY TO LOVE </div>
+                        <div class="pb-2 px-2">queeeeen</div>
+                         </div>
+                       </div>
+                     <div>
+                      xxx
+                       </div>
+                       </div> -->
+                </div>
         </div>
         </div>
         <!-- PLAY BAR -->
@@ -275,7 +270,7 @@
               
               
               <div class="playbar align-items-center justify-content-space-between d-flex px-2 m-0 position-relative">
-              <span>xxx</span><hr class="playbarline"><span>xxx</span>
+              <span>0:00</span><hr class="playbarline"><span>3:45</span>
     
               </div>
               
@@ -312,6 +307,7 @@
       src="https://kit.fontawesome.com/8539ff3369.js"
       crossorigin="anonymous"
     ></script>
-    <script src="home.js"></script>
+    <script src="album.js"></script>
   </body>
 </html>
+

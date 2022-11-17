@@ -1,5 +1,5 @@
 <p align="center">
-<h2>Spotify Clone built on Bootstrap4&DeezerAPI 🫐 </h2>
+<h2>Spotify Clone built on Bootstrap5&DeezerAPI 🫐 </h2>
 </p>
 
 
