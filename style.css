@@ -301,6 +301,12 @@ a {
     overflow: hidden;
     text-overflow: ellipsis;
   }
+  #midsidecards .card-title {
+    width: 125px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
   .card-text {
     width: 100px;
     white-space: nowrap;
