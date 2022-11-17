@@ -1,9 +1,11 @@
+const params = new URLSearchParams(window.location.search);
+const songId = params.get("songId");
 fetchArtistAPI = async () => {
   const options = {
     method: "GET",
   };
   const response = await fetch(
-    "https://striveschool-api.herokuapp.com/api/deezer/artist/412",
+    `https://striveschool-api.herokuapp.com/api/deezer/artist/${songId}`,
     options
   );
   const result = await response.json();
