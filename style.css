@@ -348,3 +348,6 @@ a {
   background-color: rgba(107, 107, 107, 0.301);
   transition: 0.4s;
 }
+a {
+  text-decoration: none; /* no underline */
+}

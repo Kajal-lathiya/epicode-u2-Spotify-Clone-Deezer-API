@@ -33,6 +33,7 @@ body {
 }
 
 main {
+  margin-top: -1rem;
   margin-left: 0rem;
   /*5em x 16px = 80px*/
   padding: 2rem;
