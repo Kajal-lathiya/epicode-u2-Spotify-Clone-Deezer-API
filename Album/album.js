@@ -8,13 +8,14 @@
 //   };
 
 //   const response = await fetch(
-//     `https://striveschool-api.herokuapp.com/api/deezer/q`,
+//     `https://striveschool-api.herokuapp.com/api/deezer/album`,
 //     options
 //   );
 //   const albums = await response.json();
 //   console.log(albums);
 // }
 // getAllALbums();
+
 async function getRecords() {
   const options = {
     method: "GET",
@@ -25,7 +26,7 @@ async function getRecords() {
   };
 
   const response = await fetch(
-    `https://striveschool-api.herokuapp.com/api/deezer/album/75621062`, //later change for ${album id}
+    `https://striveschool-api.herokuapp.com/api/deezer/album/11205422`, //later change for ${album id}
     options
   );
 
@@ -44,7 +45,7 @@ window.onload = async () => {
 const albumdiv = document.querySelector("#albumcontainer");
 const displayAlbum = async (searchList) => {
   albumdiv.innerHTML += `<div class="px-3 py-2">
-  <img class="albumImg img-fluid" src="${searchList.cover_medium}"/> 
+  <img class="albumImg img-fluid" src="${searchList.cover_big}"/> 
     </div>
     <div class="albumDetails align-self-end pb-3">
         <p>${searchList.record_type}</p>
