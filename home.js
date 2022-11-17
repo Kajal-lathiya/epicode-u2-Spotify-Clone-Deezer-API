@@ -1,6 +1,7 @@
 //variables
 const topsidecards = document.querySelector("#topsidecards");
 const midsidecards = document.querySelector("#midsidecards");
+const bottomsidecards = document.querySelector("bottomsidecards");
 //--------------------------------------------//
 //-------------- SONGS -----------------------//
 async function getAlbums() {
@@ -17,7 +18,6 @@ async function getAlbums() {
   );
 
   const listOfSearchAlbums = await response.json();
-  console.log("Check (getAlbums())" + listOfSearchAlbums + "Working well!");
   return listOfSearchAlbums; //                                                       listOfSearchAlbums
 }
 
@@ -26,7 +26,6 @@ const fillPageAlbums = function (listOfSearchAlbums) {
   for (i = 0; i < 10; i++) {
     topsidecards.innerHTML += `<div class="col" id="top-buttons">
     <div class="background-card mb-3" style="max-width: 540px">
-     
         <div class="row g-0">
           <div class="col-md-4">
             <img
@@ -41,13 +40,12 @@ const fillPageAlbums = function (listOfSearchAlbums) {
               <a href="/Album/album.html?songId=${listOfSearchAlbums.data[i].album.id}"><i class="fa-solid fa-circle-play fa-2xl"></i></a>
           </div>
         </div>
-     
     </div>
   </div>
 </div>`;
   }
 };
-//-------------- Playlists/Artists -----------------------//
+
 async function getArtists() {
   const options = {
     method: "GET",
@@ -96,7 +94,6 @@ async function getArtists() {
   let listOfSearchArtists6 = await response6.json();
   let listOfSearchArtists7 = await response7.json();
   let listOfSearchArtists8 = await response8.json();
-  console.log(listOfSearchArtists8);
   return [
     listOfSearchArtists,
     listOfSearchArtists2,
@@ -132,10 +129,12 @@ const fillPageArtists = function ([
       /></a>
       <div class="card-body">
         <h5 class="card-title">${listOfSearchArtists.name}</h5>
-        <div class="d-flex justify-content-between">
-          <p class="card-text">Lorem ipsum...</p>
-        </div
-        <i class="fa-solid fa-circle-play fa-2xl"></i>
+        <div
+        class="d-flex align-items-baseline justify-content-between"
+      >
+        <p class="card-text">Chill lofi hip-hop mix.</p>
+        <i class="fa-solid fa-play 2-xl"></i>
+      </div>
       </div>
     </div>
   </div>
@@ -151,7 +150,12 @@ const fillPageArtists = function ([
       /></a>
       <div class="card-body">
         <h5 class="card-title">${listOfSearchArtists2.name}</h5>
-        <p class="card-text">Lorem ipsum...</p>
+        <div
+                      class="d-flex align-items-baseline justify-content-between"
+                    >
+                      <p class="card-text">Chill lofi hip-hop mix.</p>
+                      <i class="fa-solid fa-play 2-xl"></i>
+                    </div>
       </div>
     </div>
   </div>
@@ -167,7 +171,12 @@ const fillPageArtists = function ([
       /></a>
       <div class="card-body">
         <h5 class="card-title">${listOfSearchArtists3.name}</h5>
-        <p class="card-text">Lorem ipsum... </p>
+        <div
+                      class="d-flex align-items-baseline justify-content-between"
+                    >
+                      <p class="card-text">Chill lofi hip-hop mix.</p>
+                      <i class="fa-solid fa-play 2-xl"></i>
+                    </div>
       </div>
     </div>
   </div>
@@ -183,7 +192,12 @@ const fillPageArtists = function ([
       /></a>
       <div class="card-body">
         <h5 class="card-title">${listOfSearchArtists4.name}</h5>
-        <p class="card-text">Lorem ipsum... </p>
+        <div
+                      class="d-flex align-items-baseline justify-content-between"
+                    >
+                      <p class="card-text">Chill lofi hip-hop mix.</p>
+                      <i class="fa-solid fa-play 2-xl"></i>
+                    </div>
       </div>
     </div>
   </div>
@@ -199,7 +213,12 @@ const fillPageArtists = function ([
       /></a>
       <div class="card-body">
         <h5 class="card-title">${listOfSearchArtists5.name}</h5>
-        <p class="card-text">Lorem ipsum... </p>
+        <div
+                      class="d-flex align-items-baseline justify-content-between"
+                    >
+                      <p class="card-text">Chill lofi hip-hop mix.</p>
+                      <i class="fa-solid fa-play 2-xl"></i>
+                    </div>
       </div>
     </div>
   </div>
@@ -215,7 +234,12 @@ const fillPageArtists = function ([
       /></a>
       <div class="card-body">
         <h5 class="card-title">${listOfSearchArtists6.name}</h5>
-        <p class="card-text">Lorem ipsum... </p>
+        <div
+                      class="d-flex align-items-baseline justify-content-between"
+                    >
+                      <p class="card-text">Chill lofi hip-hop mix.</p>
+                      <i class="fa-solid fa-play 2-xl"></i>
+                    </div>
       </div>
     </div>
   </div>
@@ -231,7 +255,12 @@ const fillPageArtists = function ([
       /></a>
       <div class="card-body">
         <h5 class="card-title">${listOfSearchArtists7.name}</h5>
-        <p class="card-text">Lorem ipsum... </p>
+        <div
+                      class="d-flex align-items-baseline justify-content-between"
+                    >
+                      <p class="card-text">Chill lofi hip-hop mix.</p>
+                      <i class="fa-solid fa-play 2-xl"></i>
+                    </div>
       </div>
     </div>
   </div>
@@ -247,38 +276,170 @@ const fillPageArtists = function ([
       /></a>
       <div class="card-body">
         <h5 class="card-title">${listOfSearchArtists8.title}</h5>
-        <p class="card-text">Lorem ipsum... </p>
+        <div
+                      class="d-flex align-items-baseline justify-content-between"
+                    >
+                      <p class="card-text">Chill lofi hip-hop mix.</p>
+                      <i class="fa-solid fa-play 2-xl"></i>
+                    </div>
       </div>
     </div>
   </div>
     `;
 };
-//-------------- 3rd Row/Bottom Side/Podcasts------------//
-async function getPodcasts() {
-  const options = {
-    method: "GET",
-    headers: {
-      "X-RapidAPI-Key": "a384224cb5msh269936e2552c740p19046ejsnc63fad635c19",
-      "X-RapidAPI-Host": "deezerdevs-deezer.p.rapidapi.com",
-    },
-  };
-  const response = await fetch(
-    `https://striveschool-api.herokuapp.com/api/deezer/search?q=True%20Spies`,
-    options
-  );
 
-  const listOfSearchAlbums = await response.json();
-  console.log(
-    "Check (getAlbums())" + !{ listOfSearchAlbums } + "Working well!"
-  );
-  return listOfSearchAlbums; //                                                       listOfSearchAlbums
-}
+//-------------- 3rd Row/Bottom Side/Podcasts------------//
+// async function getPlaylists() {
+//   const options = {
+//     method: "GET",
+//     headers: {
+//       "X-RapidAPI-Key": "a384224cb5msh269936e2552c740p19046ejsnc63fad635c19",
+//       "X-RapidAPI-Host": "deezerdevs-deezer.p.rapidapi.com",
+//     },
+//   };
+//   const response1 = await fetch(
+//     `https://www.deezer.com/en/playlist/9478727382`,
+//     options
+//   );
+//   const response2 = await fetch(
+//     `https://www.deezer.com/en/playlist/1306931615`,
+//     options
+//   );
+//   const response3 = await fetch(
+//     `https://www.deezer.com/en/playlist/10857536122`,
+//     options
+//   );
+//   const response4 = await fetch(
+//     `https://www.deezer.com/en/playlist/7584355422`,
+//     options
+//   );
+//   const response5 = await fetch(
+//     `https://www.deezer.com/en/playlist/10331644722`,
+//     options
+//   );
+//   const response6 = await fetch(
+//     `https://www.deezer.com/en/playlist/1908130662`,
+//     options
+//   );
+
+//   const listOfGenres1 = await response1.json();
+//   const listOfGenres2 = await response2.json();
+//   const listOfGenres3 = await response3.json();
+//   const listOfGenres4 = await response4.json();
+//   const listOfGenres5 = await response5.json();
+//   const listOfGenres6 = await response6.json();
+//   return [
+//     listOfGenres1,
+//     listOfGenres2,
+//     listOfGenres3,
+//     listOfGenres4,
+//     listOfGenres5,
+//     listOfGenres6,
+//   ];
+// }
+// const fillPagePlaylists = function ([
+//   listOfGenres1,
+//   listOfGenres2,
+//   listOfGenres3,
+//   listOfGenres4,
+//   listOfGenres5,
+//   listOfGenres6,
+// ]) {
+//   bottomsidecards.innerHTML = "";
+//   bottomsidecards.innerHTML += `
+//     <div class="col-xl-2">
+//       <div class="card" id="darker">
+//         <img
+//           src="${listOfGenres1.picture_big}"
+//           class="card-img-top p-2"
+//           alt="..."
+//         />
+//         <div class="card-body">
+//           <h5 class="card-title">Chill</h5>
+//           <p class="card-text">Chill lofi hip-hop mix.</p>
+//         </div>
+//       </div>
+//     </div>`;
+//   bottomsidecards.innerHTML += `
+//     <div class="col-xl-2">
+//       <div class="card" id="darker">
+//         <img
+//           src="${listOfGenres2.picture_big}"
+//           class="card-img-top p-2"
+//           alt="..."
+//         />
+//         <div class="card-body">
+//           <h5 class="card-title">Chill</h5>
+//           <p class="card-text">Chill lofi hip-hop mix.</p>
+//         </div>
+//       </div>
+//     </div>`;
+//   bottomsidecards.innerHTML += `
+//     <div class="col-xl-2">
+//       <div class="card" id="darker">
+//         <img
+//           src="${listOfGenres3.picture_big}"
+//           class="card-img-top p-2"
+//           alt="..."
+//         />
+//         <div class="card-body">
+//           <h5 class="card-title">Chill</h5>
+//           <p class="card-text">Chill lofi hip-hop mix.</p>
+//         </div>
+//       </div>
+//     </div>`;
+//   bottomsidecards.innerHTML += `
+//     <div class="col-xl-2">
+//       <div class="card" id="darker">
+//         <img
+//           src="${listOfGenres4.picture_big}"
+//           class="card-img-top p-2"
+//           alt="..."
+//         />
+//         <div class="card-body">
+//           <h5 class="card-title">Chill</h5>
+//           <p class="card-text">Chill lofi hip-hop mix.</p>
+//         </div>
+//       </div>
+//     </div>`;
+//   bottomsidecards.innerHTML += `
+//     <div class="col-xl-2">
+//       <div class="card" id="darker">
+//         <img
+//           src="${listOfGenres5.picture_big}"
+//           class="card-img-top p-2"
+//           alt="..."
+//         />
+//         <div class="card-body">
+//           <h5 class="card-title">Chill</h5>
+//           <p class="card-text">Chill lofi hip-hop mix.</p>
+//         </div>
+//       </div>
+//     </div>`;
+//   bottomsidecards.innerHTML += `
+//     <div class="col-xl-2">
+//       <div class="card" id="darker">
+//         <img
+//           src="${listOfGenres6.picture_big}"
+//           class="card-img-top p-2"
+//           alt="..."
+//         />
+//         <div class="card-body">
+//           <h5 class="card-title">Chill</h5>
+//           <p class="card-text">Chill lofi hip-hop mix.</p>
+//         </div>
+//       </div>
+//     </div>`;
+// };
+
 window.onload = async () => {
   const listOfSearchAlbums = await getAlbums();
-  console.log("Check (window.onload)" + listOfSearchAlbums + "Working well!");
   fillPageAlbums(listOfSearchAlbums);
 
   const listOfSearchArtists = await getArtists();
-  console.log(listOfSearchArtists);
   fillPageArtists(listOfSearchArtists);
+
+  const listOfGenres = await getPlaylists();
+  console.log(listOfGenres);
+  fillPagePlaylists(listOfGenres);
 };
