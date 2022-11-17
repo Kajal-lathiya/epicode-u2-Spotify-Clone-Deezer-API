@@ -1,3 +1,7 @@
+//variables
+const topsidecards = document.querySelector("#topsidecards");
+//--------------------------------------------//
+//-------------- SONGS -----------------------//
 async function getAlbums() {
   const options = {
     method: "GET",
@@ -20,7 +24,7 @@ window.onload = async () => {
   console.log(listOfSearch);
   fillPageAlbums(listOfSearch);
 };
-const topsidecards = document.querySelector("#topsidecards");
+
 const fillPageAlbums = function (listOfSearch) {
   topsidecards.innerHTML = "";
   for (i = 0; i < 10; i++) {
@@ -45,3 +49,4 @@ const fillPageAlbums = function (listOfSearch) {
 </div>`;
   }
 };
+//-------------- Playlists/Artists -----------------------//
