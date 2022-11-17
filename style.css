@@ -131,6 +131,9 @@ a {
   color: #a5a5a7;
   margin-left: 1rem;
 }
+.allplaylists li {
+  margin-left: 2rem;
+}
 .nav-item-playlists {
   margin-top: 0.5rem;
   font-weight: 500;
@@ -266,6 +269,12 @@ a {
     text-overflow: ellipsis;
   }
 }
+#midsidecards .card-title {
+  width: 120px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 @media screeen and (min-width: 1200px) {
 }
 @media screen and (min-width: 1500px) {
@@ -296,6 +305,12 @@ a {
     font-weight: 500;
   }
   #top-buttons .card-title {
+    width: 125px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  #midsidecards .card-title {
     width: 125px;
     white-space: nowrap;
     overflow: hidden;
