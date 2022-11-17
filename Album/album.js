@@ -15,7 +15,8 @@
 //   console.log(albums);
 // }
 // getAllALbums();
-
+const params = new URLSearchParams(window.location.search);
+const songId = params.get("songId");
 async function getRecords() {
   const options = {
     method: "GET",
@@ -26,7 +27,11 @@ async function getRecords() {
   };
 
   const response = await fetch(
-    `https://striveschool-api.herokuapp.com/api/deezer/album/73183162`, //later change for ${album id}
+
+    //`https://striveschool-api.herokuapp.com/api/deezer/album/73183162`, //later change for ${album id}
+
+    `https://striveschool-api.herokuapp.com/api/deezer/album/${songId}`, //later change for ${album id}
+
     options
   );
 
