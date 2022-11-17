@@ -382,8 +382,11 @@ a {
 }
 
 .right {
-    width: 85%;
-    height: 88vh;
+
+  width: 85%;
+  height: 150vh;
+  /* gotta check the height later to wrap around the song list properly */
+
 }
 
 .playBar {
@@ -406,8 +409,9 @@ a {
 }
 
 .albumImg {
-    height: 15vh;
-    width: 15vw;
+  height: 12vh;
+  width: 12vw;
+
 }
 
 .albumDetails {
@@ -437,9 +441,11 @@ a {
 }
 
 hr {
+
     color: white;
     margin: 0 2em;
     padding: 0 2em;
+
 }
 
 .playBar h6 {
@@ -448,8 +454,9 @@ hr {
 }
 
 .lilAlb {
-    width: 60px;
-    height: 60px;
+
+  width: 60px;
+  height: 60px;
 }
 
 .playbar p {
@@ -457,18 +464,18 @@ hr {
     color: lightgrey;
     margin: none;
 }
-
-.playbar h6:hover,
 p:hover {
     text-decoration: underline;
     cursor: pointer;
 }
 
 .playbarline {
-    width: 450px;
-    margin: 0 0.5em;
-    border: solid 0.12em lightgrey;
-    border-radius: 10%;
+
+  width: 500px;
+  margin: 0 0.5em;
+  border: solid 0.12em lightgrey;
+  border-radius: 10%;
+
 }
 
 .volumebarline {
@@ -478,17 +485,17 @@ p:hover {
     border-radius: 10%;
 }
 
-.Albumtable {
-    color: #f5f5f5;
-    margin-left: 2em;
-    margin-right: 2em;
+.artistName {
+  color: lightgrey;
+  font-size: 0.75em;
+}
+.artistName:hover {
+  text-decoration: underline;
+  cursor: pointer;
+  color: #f5f5f5;
+}
+.songlistDiv:hover {
+  background-color: rgba(59, 58, 58, 0.6);
+  border-radius: 5px;
 }
 
-tr {
-    height: 2.5rem;
-    border: none;
-}
-
-tr:hover {
-    background-color: rgb(18, 18, 18, 0.4);
-}
