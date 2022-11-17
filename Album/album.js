@@ -8,7 +8,7 @@
 //   };
 
 //   const response = await fetch(
-//     `https://striveschool-api.herokuapp.com/api/deezer/album`,
+//     `https://striveschool-api.herokuapp.com/api/deezer/artist/412`,
 //     options
 //   );
 //   const albums = await response.json();
@@ -27,7 +27,11 @@ async function getRecords() {
   };
 
   const response = await fetch(
+
+    //`https://striveschool-api.herokuapp.com/api/deezer/album/73183162`, //later change for ${album id}
+
     `https://striveschool-api.herokuapp.com/api/deezer/album/${songId}`, //later change for ${album id}
+
     options
   );
 
@@ -54,7 +58,7 @@ const displayAlbum = async (searchList) => {
        <span>
         <img class="bandLogo" src="${searchList.artist.picture}">
        </span>
-       <span>${searchList.artist.name}</span>
+       <span class="artist">${searchList.artist.name}</span>
        <span>${searchList.release_date}</span>
        <span>${searchList.nb_tracks} songs,</span>
        <span>${searchList.duration}</span>
@@ -76,9 +80,9 @@ const displaySongs = async (searchList) => {
 
   for (i = 0; i < songArr.length; i++) {
     const songDiv = document.createElement("div");
-    songDiv.innerHTML = `<div class="d-flex justify-content-between align-items-center songlistDiv">
+    songDiv.innerHTML = `<div class="d-flex justify-content-between align-items-center songlistDiv px-2">
                             <div class="d-flex justify-content-between align-items-center">
-                            <div class="p-2">
+                            <div class="numbers d-flex justify-content-flex-end px-2">
                             ${[i + 1]}
                                 </div>
                         <div class="align-content-center"> 
@@ -90,10 +94,18 @@ const displaySongs = async (searchList) => {
                             }</div>
                             </div>
                         </div>
-                        <div>
+                        <div class="pl-4">
                         ${songArr[i].duration}
                         </div>
                         </div>`;
     songContainer.appendChild(songDiv);
   }
 };
+
+//extract song duration from second string
+const seconds = 600;
+//console.log(new Date(seconds * 1000).toISOString().slice(15, 19));
+
+//extract album duration from second string
+const albumseconds = 2313;
+//console.log(new Date(albumseconds * 1000).toISOString().slice(12, 19));
