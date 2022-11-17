@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Album Page</title>
     <link rel="stylesheet" href="styles.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
@@ -171,9 +171,9 @@
                 <div class="row">
                  
                        
-                    <div class="d-flex justify-content-left">   
-                    <div class="albumcontainer px-3 py-2">
-                        <img class="albumImg img-fluid" src="https://glastonbury.davidbowie.com/images/album_cover.png"/> 
+                    <div id="albumcontainer" class="d-flex justify-content-left">   
+                    <!-- <div class="albumcontainer px-3 py-2"> -->
+                        <!-- <img class="albumImg img-fluid" src="https://glastonbury.davidbowie.com/images/album_cover.png"/> 
                         </div>
                         <div class="albumDetails align-self-end pb-3">
                             <p>Album</p>
@@ -185,48 +185,43 @@
                            <span>Year</span>
                            <span>Song count,</span>
                            <span>Duration</span>
-                         </div>                         
-                     </div>
+                         </div>                          -->
+                     <!-- </div> -->
                     
                 
                 </div>  
-             
-                <div class="songList">
-                 
-                  
-                  <table class="Albumtable table-hover">
-                    <tbody>
-                      <tr>
-                        <th scope="row">#</th>
-                        <td>Title</td>
-                        
-                        <td><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16">
-                          <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
-                          <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"/>
-                        </svg></td>
-                      </tr>
-                    </tbody>
-                  </table>
-                      <hr>
-                      <table scope="row" class="Albumtable table-hover row">
-                        <tbody>
-                      <tr>
-                        <th scope="row">1</th>
-                        <td>Jacob</td>
-                        
-                        <td>@fat</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">2</th>
-                        <td>Larry</td>
-                        
-                        <td>@twitter</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                  </div>  
-          </div>
-       
+               
+                <div class="d-flex row songList mx-2 p-0 my-0">
+                       <div class="d-flex justify-content-between">
+                         <div>
+                        <span class="px-2">#</span>
+                        <span>Title</span>
+                        </div>
+                      <div>
+                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16">
+                            <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
+                            <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"/>
+                          </svg>
+                        </div>
+                        </div>
+                     
+                        <div class="mb-4"><hr></div> 
+                     
+                      <!-- <div class="d-flex justify-content-between bg-dark align-items-center">
+                        <div class="d-flex justify-content-between align-items-center">
+                          <div class="p-2">
+                            1
+                             </div>
+                       <div class="align-content-center"> 
+                        <div class="fw-bold m-0 pt-2 px-2 ">SOMEBODY TO LOVE </div>
+                        <div class="pb-2 px-2">queeeeen</div>
+                         </div>
+                       </div>
+                     <div>
+                      xxx
+                       </div>
+                       </div> -->
+                </div>
         </div>
         </div>
         <!-- PLAY BAR -->
@@ -312,6 +307,6 @@
       src="https://kit.fontawesome.com/8539ff3369.js"
       crossorigin="anonymous"
     ></script>
-    <script src="home.js"></script>
+    <script src="album.js"></script>
   </body>
 </html>
