@@ -9,8 +9,8 @@ async function getSearch(e) {
   const options = {
     method: "GET",
     headers: {
-      "X-RapidAPI-Key": "a384224cb5msh269936e2552c740p19046ejsnc63fad635c19",
-      "X-RapidAPI-Host": "deezerdevs-deezer.p.rapidapi.com",
+      Authorization:
+        "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2Mzc1ODhjYTIyNTJhYTAwMTVkNjllYjQiLCJpYXQiOjE2Njg2NDcxMTUsImV4cCI6MTY2OTg1NjcxNX0.qtWzqEc77uBml5A3Uls6MJwHlyeoATIfr2ssavXysVU",
     },
   };
   const response = await fetch(

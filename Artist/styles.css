@@ -502,8 +502,19 @@ a {
   color: lightgrey;
   font-size: 0.75em;
 }
+<<<<<<< Updated upstream
 
 #nav-user {
   background-color: #1c1b1d;
   border-radius: 25px;
+=======
+.trackTitle {
+  width: 500px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.artistImage {
+  cursor: pointer;
+>>>>>>> Stashed changes
 }

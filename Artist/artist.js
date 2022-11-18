@@ -64,8 +64,8 @@ renderTracklist = ({ data, next }) => {
         
         <span class="indexonhover">${index + 1}</span>
         
-        <img src=${album.cover_xl} class="artistImage" />
-        <span>${title}</span>
+        <img src=${album.cover_xl} class="artistImage"/>
+        <span class="songname">${title}</span>
         </div>
         <p>${rank}</p>
         <p>${duration}</p>
