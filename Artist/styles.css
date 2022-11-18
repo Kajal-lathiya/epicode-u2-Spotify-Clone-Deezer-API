@@ -164,9 +164,11 @@ a {
     width: 25px;
     height: 25px;
     border-radius: 50%;
-    padding: 0.5rem;
+    padding-left: 6px;
+    padding-top: 4px;
     margin-left: 0.5rem;
     margin-right: 0.5rem;
+    border: 0.2px solid #343a40;
 }
 
 .fa-chevron-right,
@@ -214,15 +216,18 @@ a {
 .header {
     height: 5vh;
     align-items: center;
+    padding-left: 10px;
     /* background-color: red; */
 }
 
 .profile-info {
     display: flex;
-    height: 5vh;
+    height: 6vh;
     align-items: center !important;
     border-radius: 20px;
+    border: 1px solid #343a40;
     background-color: #110505;
+    margin-right: 10px;
 }
 
 .profilePic {
@@ -252,6 +257,7 @@ a {
     max-width: 100px;
     padding-top: 12px;
     font-size: 14px;
+    padding-right: 7px;
     text-overflow: ellipsis;
 }
 
@@ -346,7 +352,7 @@ h6 {
 #see-more {
     font-size: 12px;
     font-weight: bolder;
-    margin-bottom: 100px;
+    margin-bottom: 10px;
 }
 
 
@@ -471,4 +477,9 @@ tr:hover {
 a {
     text-decoration: none;
     /* no underline */
+}
+
+.playbar span {
+    color: lightgrey;
+    font-size: 0.75em;
 }
