@@ -89,7 +89,7 @@ const displaySongs = async (searchList) => {
                             <div class="fw-bold m-0 pt-2 px-2 ">${
                               songArr[i].title
                             }</div>
-                            <div class="pb-2 px-2 artistName"><a href="../Artist/artist.html?songId=${
+                            <div class="pb-2 px-2 "><a class="artistName" href="../Artist/artist.html?songId=${
                               songArr[i].artist.id
                             }">${songArr[i].artist.name}</a></div>
                             </div>
