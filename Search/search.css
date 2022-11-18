@@ -24,9 +24,7 @@ body {
     #5e0506
   );
   background-size: cover;
-  height: 100vh;
-  overflow: auto;
-  overflow-x: hidden;
+  height: 110vh;
   background-attachment: fixed;
 }
 

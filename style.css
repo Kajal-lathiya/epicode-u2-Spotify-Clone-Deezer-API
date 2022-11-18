@@ -272,7 +272,13 @@ a {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-@media screeen and (min-width: 1200px) {
+@media screeen and (max-width: 1500px) {
+  .card-title {
+    width: 50px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
 }
 @media screen and (min-width: 1500px) {
   main {
@@ -308,7 +314,7 @@ a {
     text-overflow: ellipsis;
   }
   #midsidecards .card-title {
-    width: 55px;
+    width: 125px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
