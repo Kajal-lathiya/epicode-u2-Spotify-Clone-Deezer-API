@@ -523,3 +523,7 @@ hr {
   color: lightgrey;
   font-size: 0.75em;
 }
+
+.inputField {
+  border-radius: 10px;
+}
