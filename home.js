@@ -13,7 +13,7 @@ async function getAlbums() {
     },
   };
   const response = await fetch(
-    `https://striveschool-api.herokuapp.com/api/deezer/search?q=rolling`,
+    `https://striveschool-api.herokuapp.com/api/deezer/search?q=rihanna`,
     options
   );
 
