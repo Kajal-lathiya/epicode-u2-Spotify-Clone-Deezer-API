@@ -58,7 +58,7 @@ const displayAlbum = async (searchList) => {
        <span>
         <img class="bandLogo" src="${searchList.artist.picture}">
        </span>
-       <span class="artist">${searchList.artist.name}</span>
+       <span ><a class="artist" href="../Artist/artist.html?songId=${searchList.artist.id}">${searchList.artist.name}</a></span>
        <span>${searchList.release_date}</span>
        <span>${searchList.nb_tracks} songs,</span>
        <span>${searchList.duration}</span>
@@ -89,9 +89,9 @@ const displaySongs = async (searchList) => {
                             <div class="fw-bold m-0 pt-2 px-2 ">${
                               songArr[i].title
                             }</div>
-                            <div class="pb-2 px-2 artistName">${
-                              songArr[i].artist.name
-                            }</div>
+                            <div class="pb-2 px-2 artistName"><a href="../Artist/artist.html?songId=${
+                              songArr[i].artist.id
+                            }">${songArr[i].artist.name}</a></div>
                             </div>
                         </div>
                         <div class="pl-4">

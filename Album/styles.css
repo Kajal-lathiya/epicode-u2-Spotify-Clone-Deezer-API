@@ -494,12 +494,14 @@ hr {
   border: solid 0.12em lightgrey;
   border-radius: 10%;
 }
-
-.artistName {
+a {
+  text-decoration: underline;
+}
+.artistName > a {
   color: lightgrey;
   font-size: 0.75em;
 }
-.artistName:hover {
+.artistName ['a'] :hover {
   text-decoration: underline;
   cursor: pointer;
   color: #f5f5f5;
