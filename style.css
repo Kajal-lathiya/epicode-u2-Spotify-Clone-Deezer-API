@@ -308,7 +308,7 @@ a {
     text-overflow: ellipsis;
   }
   #midsidecards .card-title {
-    width: 80px;
+    width: 55px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;

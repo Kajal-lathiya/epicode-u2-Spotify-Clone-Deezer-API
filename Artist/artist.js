@@ -7,7 +7,7 @@
 //     },
 //   };
 //   const response = await fetch(
-//     "https://striveschool-api.herokuapp.com/api/deezer/artist/11",
+//     "https://striveschool-api.herokuapp.com/api/deezer/artist/412",
 //     options
 //   );
 //   const result = await response.json();
@@ -99,11 +99,7 @@ onClickSeeMore = async (url) => {
 };
 renderartist = ({ name, picture_xl, nb_fan, radio, type }) => {
   const artistInfo = document.getElementById("artist-info");
-<<<<<<< Updated upstream
   artistInfo.innerHTML = `<div class="bg-image" style="background-image: url(${picture_xl}); ">
-=======
-  artistInfo.innerHTML = `<div class="bg-image" style="background-image: url(${picture_xl});">
->>>>>>> Stashed changes
     <div class="header row d-flex justify-content-between">
       <span
         ><i class="fa-solid fa-chevron-left chevrons"></i
@@ -130,11 +126,7 @@ renderartist = ({ name, picture_xl, nb_fan, radio, type }) => {
   const divNode = document.createElement("div");
   divNode.className = "d-flex";
   divNode.classList.add = "mt-2";
-<<<<<<< Updated upstream
   divNode.innerHTML = ` <div class="d-flex mt-3"><img src=${picture_xl} class="image60" style="border-radius: 50%;" />
-=======
-  divNode.innerHTML = ` <img src=${picture_xl} class="image60" />
->>>>>>> Stashed changes
 <div class="ml-2">
   <div class="artistPic">
       <img src="https://i.pinimg.com/564x/08/35/96/083596835424340eda90439fd20e5ee9.jpg" class="image20" />
@@ -142,11 +134,7 @@ renderartist = ({ name, picture_xl, nb_fan, radio, type }) => {
   </div>
   <h6 class="font-weight-bolder fontsize12">${name}</h6>
   <p class="fontsize12">Playlist</p>
-<<<<<<< Updated upstream
 </div></div>`;
-=======
-</div>`;
->>>>>>> Stashed changes
   artistPick.appendChild(divNode);
 };
 window.onload = async () => {
