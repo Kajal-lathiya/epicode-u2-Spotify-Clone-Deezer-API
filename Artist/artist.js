@@ -105,14 +105,7 @@ renderartist = ({ name, picture_xl, nb_fan, radio, type }) => {
         ><i class="fa-solid fa-chevron-left chevrons"></i
         ><i class="fa-solid fa-chevron-right chevrons"></i
       ></span>
-      <div><button
-      type="button"
-      class="btn btn-outline-white text-light"
-      style="border-radius: 20px"
-    >
-      Upgrade
-    </button>
-  </div>
+      
   <div class="mr-3 d-flex align-items-center">
   <div class="mr-2"><button
   type="button"
