@@ -502,3 +502,8 @@ a {
   color: lightgrey;
   font-size: 0.75em;
 }
+
+#nav-user {
+  background-color: #1c1b1d;
+  border-radius: 25px;
+}

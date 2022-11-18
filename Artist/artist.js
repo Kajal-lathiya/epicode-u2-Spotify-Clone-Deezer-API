@@ -105,13 +105,36 @@ renderartist = ({ name, picture_xl, nb_fan, radio, type }) => {
         ><i class="fa-solid fa-chevron-left chevrons"></i
         ><i class="fa-solid fa-chevron-right chevrons"></i
       ></span>
-        <div class="profile-info">
-            <img src="${picture_xl}" class="profilePic" />
-            <p class="userName">${name}</p>
-            <i class="fa-solid fa-caret-down downArrow"></i>
-        </div>
+      <div><button
+      type="button"
+      class="btn btn-outline-white text-light"
+      style="border-radius: 20px"
+    >
+      Upgrade
+    </button>
+  </div>
+  <div class="mr-3 d-flex align-items-center">
+  <div class="mr-2"><button
+  type="button"
+  class="btn btn-outline-dark text-dark"
+  style="border-radius: 20px"
+>
+  Upgrade
+</button></div>
+  <span class="d-flex mr-3 p-2" id="nav-user">
+    <span class="d-flex align-items-center">
+      <img
+        src="https://i.pinimg.com/564x/08/35/96/083596835424340eda90439fd20e5ee9.jpg"
+        style="width: 30px; height: 30px; border-radius: 50%"
+      />
+
+      &nbsp;&nbsp;Gh0stxt&nbsp;&nbsp;<i
+        class="fa-solid fa-caret-down"
+      ></i>
+    </span>
+  </span></div></div>
     </div>
-    <div>
+    <div class="ml-3 mt-2">
      ${
        radio &&
        `<img src="../Assets/verified.png" class="verifiedLogo" />

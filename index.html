@@ -136,31 +136,42 @@
     </div>
     <main class="body">
       <nav class="navbar sticky-top mb-3">
-        <div class="d-flex align-items-center">
-          <span
-            ><i class="fa-solid fa-chevron-left chevrons"></i
-            ><i class="fa-solid fa-chevron-right chevrons"></i
-          ></span>
-          <div id="righttwo">
-            <button
-              type="button"
-              class="btn btn-outline-white text-light"
-              style="border-radius: 20px"
-            >
-              Upgrade
-            </button>
+        <div class="d-flex align-items-center justify-content-between">
+          <div class="d-flex"></div>
+            <i class="fa-solid fa-chevron-left chevrons"></i
+            ><i class="fa-solid fa-chevron-right chevrons"></i>
           </div>
-          <span class="d-flex" id="right">
-            <img
-              src="https://i.pinimg.com/564x/08/35/96/083596835424340eda90439fd20e5ee9.jpg"
-              style="width: 30px; height: 30px; border-radius: 50%"
-            />
-            <p>
-              &nbsp;&nbsp;Gh0stxt&nbsp;&nbsp;<i
-                class="fa-solid fa-caret-down"
-              ></i>
-            </p>
-          </span>
+
+          <div class="d-flex align-items-center" id="rightnav">
+            <div style="margin-right: 1rem">
+              <button
+                type="button"
+                class="btn btn-outline-white text-light"
+                style="border-radius: 20px"
+              >
+                Upgrade
+              </button>
+            </div>
+            <div class="dropdown">
+              <button
+                class="btn btn-dark dropdown-toggle"
+                type="button"
+                id="dropdownMenuButton1"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                style="border-radius: 25px"
+              >
+                <img
+                  src="https://i.pinimg.com/564x/08/35/96/083596835424340eda90439fd20e5ee9.jpg"
+                  style="width: 30px; height: 30px; border-radius: 50%"
+                />
+                &nbsp;&nbsp;Gh0stxt&nbsp;&nbsp;
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="/Login/login.html">Log out</a></li>
+              </ul>
+            </div>
+          </div>
         </div>
       </nav>
       <div class="margin-top">

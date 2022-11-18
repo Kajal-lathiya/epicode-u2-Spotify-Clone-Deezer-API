@@ -141,19 +141,11 @@ a {
 .download {
   color: #a5a5a7;
 }
-#right {
+#rightnav {
   position: absolute;
-  right: 2.5rem;
+  right: 0rem;
   padding: 0.5rem;
-  height: 45px;
-  border-radius: 20px;
-  background-color: #161419;
-  transition: 0.3s;
   cursor: pointer;
-}
-#right:hover {
-  background-color: #323035;
-  transition: 0.3s;
 }
 #righttwo {
   position: absolute;
