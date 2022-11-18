@@ -13,7 +13,7 @@ async function getAlbums() {
     },
   };
   const response = await fetch(
-    `https://striveschool-api.herokuapp.com/api/deezer/search?q=vlospa`,
+    `https://striveschool-api.herokuapp.com/api/deezer/search?q=slipknot`,
     options
   );
 
