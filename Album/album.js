@@ -1,20 +1,21 @@
-// async function getAllALbums() {
-//   const options = {
-//     method: "GET",
-//     headers: {
-//       Authorization:
-//         "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2Mzc1ODhjYTIyNTJhYTAwMTVkNjllYjQiLCJpYXQiOjE2Njg2NDcxMTUsImV4cCI6MTY2OTg1NjcxNX0.qtWzqEc77uBml5A3Uls6MJwHlyeoATIfr2ssavXysVU",
-//     },
-//   };
+async function getAllALbums() {
+  const options = {
+    method: "GET",
+    headers: {
+      Authorization:
+        "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2Mzc1ODhjYTIyNTJhYTAwMTVkNjllYjQiLCJpYXQiOjE2Njg2NDcxMTUsImV4cCI6MTY2OTg1NjcxNX0.qtWzqEc77uBml5A3Uls6MJwHlyeoATIfr2ssavXysVU",
+    },
+  };
 
-//   const response = await fetch(
-//     `https://striveschool-api.herokuapp.com/api/deezer/artist/412`,
-//     options
-//   );
-//   const albums = await response.json();
-//   console.log(albums);
-// }
-// getAllALbums();
+  const response = await fetch(
+    `https://striveschool-api.herokuapp.com/api/deezer/artist/412`,
+    options
+  );
+  const albums = await response.json();
+  console.log(albums);
+  console.log(albums.tracklist);
+}
+getAllALbums();
 const params = new URLSearchParams(window.location.search);
 const songId = params.get("songId");
 async function getRecords() {
@@ -27,7 +28,6 @@ async function getRecords() {
   };
 
   const response = await fetch(
-
     //`https://striveschool-api.herokuapp.com/api/deezer/album/73183162`, //later change for ${album id}
 
     `https://striveschool-api.herokuapp.com/api/deezer/album/${songId}`, //later change for ${album id}
