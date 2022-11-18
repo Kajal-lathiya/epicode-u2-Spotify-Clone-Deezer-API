@@ -53,7 +53,7 @@ const displayAlbum = async (searchList) => {
   <img class="albumImg img-fluid" src="${searchList.cover_big}"/> 
     </div>
     <div class="albumDetails align-self-end pb-3">
-        <p>${searchList.record_type}</p>
+        <p>Album</p>
        <h1>${searchList.title}</h1>
        <span>
         <img class="bandLogo" src="${searchList.artist.picture}">

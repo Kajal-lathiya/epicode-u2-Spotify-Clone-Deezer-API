@@ -24,7 +24,7 @@ body {
     #5e0506
   );
   background-size: cover;
-  height: 100vh;
+  height: 100%;
   overflow: auto;
   overflow-x: hidden;
   background-attachment: fixed;
@@ -397,7 +397,7 @@ a {
 
 .right {
   width: 85%;
-  height: 150vh;
+  height: 100%;
   /* gotta check the height later to wrap around the song list properly */
 }
 
