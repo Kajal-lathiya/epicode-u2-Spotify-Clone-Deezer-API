@@ -116,7 +116,7 @@ renderartist = ({ name, picture_xl, nb_fan, radio, type }) => {
   <div class="mr-3 d-flex align-items-center">
   <div class="mr-2"><button
   type="button"
-  class="btn btn-outline-dark text-dark"
+  class="btn btn-outline-dark text-light"
   style="border-radius: 20px"
 >
   Upgrade
@@ -132,7 +132,7 @@ renderartist = ({ name, picture_xl, nb_fan, radio, type }) => {
         class="fa-solid fa-caret-down"
       ></i>
     </span>
-  </span></div></div>
+  </span></div>
     </div>
     <div class="ml-3 mt-2">
      ${
