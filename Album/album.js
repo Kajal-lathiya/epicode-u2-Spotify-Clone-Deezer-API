@@ -1,3 +1,8 @@
+//format the time for h mm
+function formatTime(s) {
+  return (s - (s %= 60)) / 60 + (9 < s ? ":" : ":0") + s;
+}
+
 async function getAllALbums() {
   const options = {
     method: "GET",
@@ -58,10 +63,12 @@ const displayAlbum = async (searchList) => {
        <span>
         <img class="bandLogo" src="${searchList.artist.picture}">
        </span>
-       <span ><a class="artist" href="../Artist/artist.html?songId=${searchList.artist.id}">${searchList.artist.name}</a></span>
+       <span ><a class="artist" href="../Artist/artist.html?songId=${
+         searchList.artist.id
+       }">${searchList.artist.name}</a></span>
        <span>${searchList.release_date}</span>
        <span>${searchList.nb_tracks} songs,</span>
-       <span>${searchList.duration}</span>
+       <span>${formatTime(searchList.duration)}</span>
      </div>                         
  </div>
  </div>`;
@@ -95,7 +102,7 @@ const displaySongs = async (searchList) => {
                             </div>
                         </div>
                         <div class="pl-4">
-                        ${songArr[i].duration}
+                        ${formatTime(songArr[i].duration)}
                         </div>
                         </div>`;
     songContainer.appendChild(songDiv);
