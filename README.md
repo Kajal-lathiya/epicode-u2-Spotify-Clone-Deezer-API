@@ -4,15 +4,25 @@
 
 
 <p align="center">
-<img src="https://i.pinimg.com/originals/d3/ca/2b/d3ca2b6b5b0d90c4b98195b205defa29.gif"/>
-</p>
-<hr>
-<p align="center">
 <h3>Our team:</h3>
 <ul>
- <li>Kajal</li>
- <li>Agatha</li>
- <li>Tim</li>
+ <li>Kajal L.</li>
+ <li>Agatha O.</li>
+ <li>Tim A.</li>
 </ul>
 </p>
 <hr>
+<p align="center">
+Home page:
+<img src="https://i.imgur.com/b7UTTkt.png"/>
+Album page:
+<img src="https://i.imgur.com/qW1wx5o.png"/>
+Artist page: 
+<img src="https://i.imgur.com/piykGjE.png"/>
+Search page:
+<img src="https://i.imgur.com/0lnYrWe.png"/>
+Login page:
+<img src="https://i.imgur.com/na15Sa0.png"/>
+</p>
+<hr>
+
