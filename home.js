@@ -13,7 +13,7 @@ async function getAlbums() {
     },
   };
   const response = await fetch(
-    `https://striveschool-api.herokuapp.com/api/deezer/search?q=foo`,
+    `https://striveschool-api.herokuapp.com/api/deezer/search?q=pop%20smoke`,
     options
   );
 
